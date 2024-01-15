@@ -1,7 +1,7 @@
 // src/components/Sidebar.tsx
 
 import React, { useState } from 'react';
-import './Sidebar.css';
+import './sidebar.css';
 
 const Sidebar = () => {
     const [collapsed, setCollapsed] = useState(false);
