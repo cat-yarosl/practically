@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className={`nav-items ${isOpen ? 'open' : ''}`}>
         <a href="#">Home</a>
         <a href="#">About</a>
-        <a href="#">Services</a>
+        <a href="#">Projects</a>
         <a href="#">Contact</a>
       </div>
       <div className="menu-toggle" onClick={toggleMenu}>
