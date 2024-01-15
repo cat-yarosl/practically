@@ -3,7 +3,7 @@ import React from 'react';
 function Header() {
     return (
         <header>
-            <h1>Welcome to My React App</h1>
+            <h1>Catherine Yaroslavtseva</h1>
         </header>
     );
 }
