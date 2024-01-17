@@ -15,7 +15,7 @@ const Sidebar = () => {
             <button className="toggle-btn" onClick={toggleSidebar}>
                 {collapsed ? '' : 'Collapse'}
             </button>
-            <ul>
+            <ul className={`options ${collapsed ? 'collapsed' : ''}`}>
                 <li>{collapsed ? '' : 'Home'}</li>
                 <li>{collapsed ? '' : 'About'}</li>
                 <li>{collapsed ? '' : 'Projects'}</li>

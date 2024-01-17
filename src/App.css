@@ -17,9 +17,10 @@
 
 header, footer {
   height: 10vh;
-  background-color: #282c34;
+  background-color: #0e0f45;
   color: white;
   padding: 1em;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 main {

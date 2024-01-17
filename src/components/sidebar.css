@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     width: 15vw;
-    background-color: #ccd0de;
+    background-color: #f0f0f0;
     height: 100vh;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -15,10 +15,17 @@
     width: 1vw;
 }
 
-.sidebar ul {
+.options {
+    background-color: #dbdbdb;
+    border-radius: 5px;
     list-style: none;
     padding: 0;
     margin: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.options.collapsed {
+    display: none;
 }
 
 .sidebar ul li {
@@ -26,11 +33,12 @@
 }
 
 .toggle-btn {
-    background-color: #32406e;
+    background-color: #f56e07;
     border-radius: 5px;
     color: white;
     border: none;
     cursor: pointer;
     padding: 10px;
     margin-bottom: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }

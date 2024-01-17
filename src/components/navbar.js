@@ -1,26 +1,18 @@
 // src/components/Navbar.tsx
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 import './navbar.css';
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
+function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">My Portfolio</div>
-      <div className={`nav-items ${isOpen ? 'open' : ''}`}>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-      </div>
-      <div className="menu-toggle" onClick={toggleMenu}>
-        <i className="fas fa-bars"></i>
+      <div className='nav-items'>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/contact">Contact</Link>
       </div>
     </nav>
   );
