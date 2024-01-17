@@ -1,11 +1,18 @@
 .App {
   text-align: center;
 }
+
+.main-content {
+  flex-direction: row;
+}
+
 header, footer {
+  width: 20vw;
   background-color: #282c34;
   color: white;
   padding: 1em;
 }
+
 main {
   padding: 1em;
 }
