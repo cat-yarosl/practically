@@ -1,7 +1,5 @@
-// src/components/Sidebar.tsx
-
 import React, { useState } from 'react';
-import './sidebar.css';
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
     const [collapsed, setCollapsed] = useState(true);
@@ -16,10 +14,10 @@ const Sidebar = () => {
                 {collapsed ? '' : 'Collapse'}
             </button>
             <ul className={`options ${collapsed ? 'collapsed' : ''}`}>
-                <li>{collapsed ? '' : 'Home'}</li>
-                <li>{collapsed ? '' : 'About'}</li>
-                <li>{collapsed ? '' : 'Projects'}</li>
-                <li>{collapsed ? '' : 'Contact'}</li>
+                <li><Link to='/'>{collapsed ? '' : 'Home'}</Link></li>
+                <li><Link to='/about'>{collapsed ? '' : 'About'}</Link></li>
+                <li><Link to='/projects'>{collapsed ? '' : 'Projects'}</Link></li>
+                <li><Link to='/contact'>{collapsed ? '' : 'Contact'}</Link></li>
             </ul>
         </div>
     );

@@ -15,6 +15,12 @@
   flex-grow: 1;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 header, footer {
   height: 10vh;
   background-color: #0e0f45;
@@ -28,4 +34,106 @@ main {
   flex-direction: column;
   flex-grow: 1;
   padding: 1em;
+}
+
+/* src/components/Sidebar.css */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  background-color: #f0f0f0;
+  height: 100vh;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 1vw;
+}
+
+.options {
+  background-color: #dbdbdb;
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.options.collapsed {
+  display: none;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.toggle-btn {
+  background-color: #f56e07;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* src/components/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #03041a;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle i {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .nav-items {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    display: none;
+  }
+
+  .nav-items.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
