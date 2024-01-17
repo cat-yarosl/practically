@@ -12,7 +12,7 @@ function App() {
             <Navbar />
             <div className="main-content">
               <Sidebar />
-              <div className="Other">
+              <div className="other">
                 <Header />
                 <main>
                   <Home />

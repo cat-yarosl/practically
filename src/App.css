@@ -1,18 +1,30 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-content {
+  display: flex;
   flex-direction: row;
 }
 
+.other {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 header, footer {
-  width: 20vw;
+  height: 10vh;
   background-color: #282c34;
   color: white;
   padding: 1em;
 }
 
 main {
+  display: flex;
+  flex-grow: 1;
   padding: 1em;
+  width: 20vw;
 }
