@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">MyApp</div>
+      <div className="logo">My Portfolio</div>
       <div className={`nav-items ${isOpen ? 'open' : ''}`}>
         <a href="#">Home</a>
         <a href="#">About</a>

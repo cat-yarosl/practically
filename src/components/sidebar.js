@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import './sidebar.css';
 
 const Sidebar = () => {
-    const [collapsed, setCollapsed] = useState(false);
+    const [collapsed, setCollapsed] = useState(true);
 
     const toggleSidebar = () => {
         setCollapsed(!collapsed);
@@ -13,14 +13,13 @@ const Sidebar = () => {
     return (
         <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
             <button className="toggle-btn" onClick={toggleSidebar}>
-                {collapsed ? 'Expand' : 'Collapse'}
+                {collapsed ? '' : 'Collapse'}
             </button>
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
-                {/* Add more items here */}
+                <li>{collapsed ? '' : 'Home'}</li>
+                <li>{collapsed ? '' : 'About'}</li>
+                <li>{collapsed ? '' : 'Projects'}</li>
+                <li>{collapsed ? '' : 'Contact'}</li>
             </ul>
         </div>
     );
