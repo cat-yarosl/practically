@@ -10,8 +10,8 @@ const Sidebar = () => {
 
     return (
         <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
+            <div classname={`overlay ${collapsed ? 'active' : ''}`}></div>
             <button className="toggle-btn" onClick={toggleSidebar}>
-                {collapsed ? '' : 'Collapse'}
             </button>
             <ul className={`options ${collapsed ? 'collapsed' : ''}`}>
                 <li><Link to='/'>{collapsed ? '' : 'Home'}</Link></li>

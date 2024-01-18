@@ -14,7 +14,6 @@ function App() {
     return (
         <div className="App">
             <Router>
-              <Navbar />
               <div className="main-content">
                 <Sidebar />
                 <div className="other">
