@@ -21,6 +21,11 @@
   flex-grow: 1;
 }
 
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+
 header, footer {
   height: 10vh;
   background-color: #0e0f45;
@@ -136,4 +141,32 @@ main {
   .menu-toggle {
     display: block;
   }
+}
+
+.contact-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.contact-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.contact-body {
+  padding: 15px;
+  background-color: white;
+}
+
+.contact-body p {
+  margin: 10px 0;
+  line-height: 1.6;
 }
