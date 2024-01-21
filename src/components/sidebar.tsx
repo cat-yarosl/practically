@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'
 
-function Sidebar(collapsed) {
+interface SidebarProps {
+    collapsed: boolean;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ collapsed }) => {
     return (
         <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
-            <div className={`overlay ${collapsed ? 'active' : ''}`}></div>
             <ul className={`options ${collapsed ? 'collapsed' : ''}`}>
                 <li><Link to='/'>{collapsed ? '' : 'Home'}</Link></li>
                 <li><Link to='/about'>{collapsed ? '' : 'About'}</Link></li>
