@@ -1,18 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 
-const Sidebar = () => {
-    const [collapsed, setCollapsed] = useState(true);
-
-    const toggleSidebar = () => {
-        setCollapsed(!collapsed);
-    };
-
+function Sidebar(collapsed) {
     return (
         <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
-            <div classname={`overlay ${collapsed ? 'active' : ''}`}></div>
-            <button className="toggle-btn" onClick={toggleSidebar}>
-            </button>
+            <div className={`overlay ${collapsed ? 'active' : ''}`}></div>
             <ul className={`options ${collapsed ? 'collapsed' : ''}`}>
                 <li><Link to='/'>{collapsed ? '' : 'Home'}</Link></li>
                 <li><Link to='/about'>{collapsed ? '' : 'About'}</Link></li>

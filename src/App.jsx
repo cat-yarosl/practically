@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
-import Navbar from './components/navbar';
 import Home from './pages/home';
 import About from './pages/about';
 import Contact from './pages/contact';
@@ -10,12 +9,20 @@ import Projects from './pages/projects';
 import './App.css';
 import Sidebar from './components/sidebar';
 
-function App() {
+const App = () => {
+    const [collapsed, setCollapsed] = useState(true);
+
+    const toggleSidebar = () => {
+        setCollapsed(!collapsed);
+    };
     return (
         <div className="App">
             <Router>
+              <nav className="navbar">
+                <button className="logo" onClick={toggleSidebar}></button>
+              </nav>
               <div className="main-content">
-                <Sidebar />
+                <Sidebar collapsed={collapsed}/>
                 <div className="other">
                   <Header />
                   <main>

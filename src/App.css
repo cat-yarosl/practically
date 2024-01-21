@@ -10,6 +10,8 @@
 }
 
 .other {
+  position: relative;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -48,9 +50,9 @@ main {
   padding: 1em;
 }
 
-/* src/components/Sidebar.css */
-
 .sidebar {
+  position: relative;
+  z-index: 5;
   display: flex;
   flex-direction: column;
   width: 15vw;
@@ -78,6 +80,8 @@ main {
 
 .overlay.active {
   display: block;
+  position: relative;
+  z-index: 4;
 }
 
 .options {
@@ -110,24 +114,29 @@ main {
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* src/components/Navbar.css */
-
 .navbar {
+  position: fixed;
+  z-index: 6;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #03041a;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 0.5rem 1rem;
 }
 
 .navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav-items {
-  display: flex;
+  background-image: url('ham.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-items a {
@@ -135,27 +144,6 @@ main {
   text-decoration: none;
   margin-left: 20px;
   font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-  .nav-items {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    align-items: center;
-    background-color: #333;
-    display: none;
-  }
-
-  .nav-items.open {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
 }
 
 .contact-card {
