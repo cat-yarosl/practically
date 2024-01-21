@@ -6,7 +6,7 @@ interface OverlayProps {
 
 const Overlay: React.FC<OverlayProps> = ({ collapsed }) => {
     return (
-        <div className={`overlay ${collapsed ? 'active' : ''}`}></div>
+        <div className={`overlay ${collapsed ? '' : 'active'}`}></div>
     );
 };
 

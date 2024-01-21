@@ -11,7 +11,7 @@ import Sidebar from './components/sidebar';
 import Overlay from './components/overlay';
 
 const App = () => {
-    const [collapsed, setCollapsed] = useState(false);
+    const [collapsed, setCollapsed] = useState(true);
 
     const toggleSidebar = () => {
         setCollapsed(!collapsed);
@@ -19,12 +19,12 @@ const App = () => {
 
     return (
       <div className="App">
-        <Overlay />
-        <nav className="navbar">
+        <nav className='navbar'>
           <button className="logo" onClick={toggleSidebar}></button>
         </nav>
         <Router>
           <div className="main-content">
+            <Overlay collapsed={collapsed}/>
             <Sidebar collapsed={collapsed}/>
             <div className="other">
               <Header />
