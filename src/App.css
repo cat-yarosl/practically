@@ -53,6 +53,7 @@ main {
 }
 
 .sidebar {
+  margin-top:7vh;
   display: block;
   position: relative;
   z-index: 5;
