@@ -2,9 +2,9 @@ import React from 'react';
 
 function Projects() {
     return (
-        <div className='content'>
+        <div className='cards'>
             <h2>Projects</h2>
-            <p>Words</p>
+            <div className='image-card'></div>
         </div>
     );
 }

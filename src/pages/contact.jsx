@@ -3,6 +3,7 @@ import React from 'react';
 function Contact() {
     return (
         <div className='cards'>
+            <div className="image-card"></div>
             <div className="contact-card">
                 <div className="contact-header">
                     <h2>Contact Information</h2>
