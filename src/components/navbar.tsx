@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-function Navbar() {
+const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <button className="menu_toggle"></button>

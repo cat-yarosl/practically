@@ -91,7 +91,7 @@
 .toggle-btn {
   padding: 10px;
   margin-bottom: 20px;
-  background-image: url('ham.png');
+  background-image: url('images/ham.png');
   background-size: cover;
   background-position: center;
   border-radius: 5px;
@@ -116,7 +116,7 @@
 .menu-toggle {
   height: 10px;
   width: 10px;
-  background-image: url('ham.png');
+  background-image: url('images/ham.png');
   background-size: cover;
   background-position: center;
   border-radius: 5px;
@@ -147,7 +147,7 @@
 }
 
 .image-card {
-  background-image: url('cathvyar.png');
+  background-image: url('images/cathvyar.png');
   background-size: cover;
   background-position: center;
   width: 300px;
@@ -180,7 +180,7 @@
 .logo {
   height: 10px;
   width: 10px;
-  background-image: url('cathvyar.png');
+  background-image: url('images/cathvyar.png');
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -208,7 +208,7 @@ footer {
 
 header {
   height: 20vh;
-  background-image: url('background.png');
+  background-image: url('images/background.png');
   background-size: cover;
   background-position: center;
 }
