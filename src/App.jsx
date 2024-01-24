@@ -6,9 +6,9 @@ import Home from './pages/home';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Projects from './pages/projects';
-import './App.css';
 import Sidebar from './components/sidebar';
 import Overlay from './components/overlay';
+import './App.css';
 
 const App = () => {
     const [collapsed, setCollapsed] = useState(true);
@@ -19,8 +19,8 @@ const App = () => {
 
     return (
       <div className="App">
-        <nav className='navbar'>
-          <button className="logo" onClick={toggleSidebar}></button>
+        <nav className="navbar">
+          <button className="menu-toggle" onClick={toggleSidebar}></button>
         </nav>
         <Router>
           <div className="main-content">
