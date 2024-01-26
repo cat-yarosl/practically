@@ -148,6 +148,11 @@
   margin: 20px;
   font-family: Arial, sans-serif;
   text-align: left;
+  transition: transform 0.2s;
+}
+
+.contact-card:hover {
+  transform: scale(1.1);
 }
 
 .image-card {
@@ -162,6 +167,11 @@
   margin: 20px;
   font-family: Arial, sans-serif;
   text-align: left;
+  transition: transform 0.2s;
+}
+
+.image-card:hover {
+  transform: scale(1.1);
 }
 
 .contact-header {
@@ -215,8 +225,7 @@ footer {
   flex-direction: row;
   justify-content: center;
   height: 10vh;
-  background: rgb(13,51,149);
-  background: radial-gradient(circle, rgb(12, 12, 13) 0%, rgba(2,0,36,1) 100%);
+  background: black;
   color: white;
 }
 
