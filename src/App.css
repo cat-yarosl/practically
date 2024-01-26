@@ -140,7 +140,8 @@
 .contact-card {
   width: 23vw;
   height:40vh;
-  border: 1px solid #ddd;
+  border: 1px solid #202024;
+  background-color: #2b2b30;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -154,7 +155,7 @@
   background-size: cover;
   background-position: center;
   width: 300px;
-  border: 1px solid #ddd;
+  border: 1px solid gray;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -164,8 +165,6 @@
 }
 
 .contact-header {
-  opacity: 0.9;
-  background-color: #121317;
   color: white;
   padding: 10px 15px;
   text-align: center;
@@ -173,7 +172,7 @@
 
 .contact-body {
   padding: 15px;
-  background-color: white;
+  color: white;
 }
 
 .contact-body p {
@@ -192,6 +191,17 @@
   border: none;
   padding: 18px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar hr {
+  width: 10vw;
+  margin-left: 0;
+  border-color: gray;
+}
+
+.contact-card hr {
+  width: 20vw;
+  border-color: white;
 }
 
 header, footer {
@@ -222,15 +232,11 @@ main {
   flex-direction: column;
   flex-grow: 1;
   padding: 1em;
+  color: white;
+  background-color: #121317
 }
 
 a {
   text-decoration: none;
   color: white;
-}
-
-hr {
-  width: 10vw;
-  margin-left: 0;
-  border-color: gray;
 }
