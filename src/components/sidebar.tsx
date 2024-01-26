@@ -10,10 +10,10 @@ const Sidebar: React.FC<SidebarProps> = ({ collapsed }) => {
         <div className={`sidebar ${collapsed ? 'collapsed' : ''}`}>
             <hr></hr>
             <ul className={`options ${collapsed ? 'collapsed' : ''}`}>
-                <li><Link to='/'>{collapsed ? '' : 'Home'}</Link></li>
-                <li><Link to='/about'>{collapsed ? '' : 'About'}</Link></li>
-                <li><Link to='/projects'>{collapsed ? '' : 'Projects'}</Link></li>
-                <li><Link to='/contact'>{collapsed ? '' : 'Contact'}</Link></li>
+                <li><Link to='/'>{collapsed ? '' : '> Home'}</Link></li>
+                <li><Link to='/about'>{collapsed ? '' : '> About'}</Link></li>
+                <li><Link to='/projects'>{collapsed ? '' : '> Projects'}</Link></li>
+                <li><Link to='/contact'>{collapsed ? '' : '> Contact'}</Link></li>
             </ul>
             <hr></hr>
         </div>

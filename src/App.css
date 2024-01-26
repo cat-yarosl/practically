@@ -146,7 +146,7 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   margin: 20px;
-  font-family: Arial, sans-serif;
+  font-size: small;
   text-align: left;
   transition: transform 0.2s;
 }
@@ -165,7 +165,6 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   margin: 20px;
-  font-family: Arial, sans-serif;
   text-align: left;
   transition: transform 0.2s;
 }
@@ -227,6 +226,7 @@ footer {
   height: 10vh;
   background: black;
   color: white;
+  font-size: small;
 }
 
 header {
