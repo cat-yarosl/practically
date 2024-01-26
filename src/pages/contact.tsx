@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Contact() {
+const Contact: React.FC = () => {
     return (
         <div className='cards'>
             <div className="image-card"></div>

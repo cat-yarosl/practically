@@ -1,9 +1,9 @@
 import React from 'react';
 
-function About() {
+const About: React.FC = () => {
     return (
         <div>
-            <h2>About Me</h2>
+            <h1>About Me</h1>
             <p>Words and things</p>
         </div>
     );

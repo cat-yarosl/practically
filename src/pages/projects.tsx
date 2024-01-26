@@ -1,10 +1,9 @@
 import React from 'react';
 
-function Projects() {
+const Projects: React.FC = () => {
     return (
         <div className='cards'>
-            <h2>Projects</h2>
-            <div className='image-card'></div>
+            <h1>Projects</h1>
         </div>
     );
 }
