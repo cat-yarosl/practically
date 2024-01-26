@@ -27,6 +27,8 @@
 .cards {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  z-index: 3;
 }
 
 .sidebar {
@@ -136,7 +138,8 @@
 }
 
 .contact-card {
-  width: 300px;
+  width: 23vw;
+  height:40vh;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -147,7 +150,7 @@
 }
 
 .image-card {
-  background-image: url('images/cathvyar.png');
+  background-image: url('images/IMG_2824.WEBP');
   background-size: cover;
   background-position: center;
   width: 300px;
@@ -161,7 +164,8 @@
 }
 
 .contact-header {
-  background-color: #007bff;
+  opacity: 0.9;
+  background-color: #121317;
   color: white;
   padding: 10px 15px;
   text-align: center;
