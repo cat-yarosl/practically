@@ -20,8 +20,22 @@
 
 .content {
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-home {
+  flex-basis: 100%;
+  text-align: left;
+  text-wrap: wrap;
+  padding: 3vh;
+}
+
+.right-home {
+  flex-basis: 100%;
+  text-align: left;
+  text-wrap: wrap;
+  padding: 3vh;
 }
 
 .cards {
