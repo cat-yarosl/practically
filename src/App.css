@@ -174,7 +174,7 @@
   background-size: cover;
   background-position: center;
   width: 300px;
-  border: 1px solid gray;
+  border: 2px solid #00eb0c;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -227,6 +227,10 @@
   border-color: white;
 }
 
+.content p {
+  color: #a5aaad;
+}
+
 header, footer {
   width: 100vw;
   padding: 1em;
@@ -262,4 +266,8 @@ main {
 a {
   text-decoration: none;
   color: white;
+}
+
+a:hover {
+  color: #1aff00;
 }

@@ -4,7 +4,7 @@ function Home() {
     return (
         <div className='content'>
             <div className='left-home'>
-                <h2>Greetings!</h2>
+                <h1> {'>'} Greetings!</h1>
                 <p>Welcome to my portfolio page. Feel free to look around!</p>
             </div>
             <div className='right-home'>

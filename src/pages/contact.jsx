@@ -6,7 +6,7 @@ function Contact() {
             <div className="image-card"></div>
             <div className="contact-card">
                 <div className="contact-header">
-                    <h2>Contact Information</h2>
+                    <h2> {'>'} Contact Information</h2>
                 </div>
                 <hr></hr>
                 <div className="contact-body">
@@ -17,7 +17,7 @@ function Contact() {
             </div>
             <div className="contact-card">
                 <div className="contact-header">
-                    <h2>Relevant Links</h2>
+                    <h2> {'>'} Relevant Links</h2>
                 </div>
                 <hr></hr>
                 <div className="contact-body">
