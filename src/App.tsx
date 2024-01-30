@@ -25,7 +25,7 @@ const App = () => {
         <Router>
           <div className="main-content">
             <Overlay collapsed={collapsed}/>
-            <Sidebar collapsed={collapsed}/>
+            <Sidebar collapsed={collapsed} onLinkClick={toggleSidebar}/>
             <div className="other">
               <Header />
                 <main>
