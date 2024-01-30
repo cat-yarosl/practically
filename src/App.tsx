@@ -17,6 +17,10 @@ const App = () => {
         setCollapsed(!collapsed);
     };
 
+    const closeSidebar = () => {
+        setCollapsed(true);
+    };
+
     return (
       <div className="App">
         <nav className="navbar">
@@ -24,7 +28,7 @@ const App = () => {
         </nav>
         <Router>
           <div className="main-content">
-            <Overlay collapsed={collapsed}/>
+            <Overlay collapsed={collapsed} onCloseSidebar={closeSidebar}/>
             <Sidebar collapsed={collapsed} onLinkClick={toggleSidebar}/>
             <div className="other">
               <Header />

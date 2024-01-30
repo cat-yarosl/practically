@@ -2,11 +2,12 @@ import React from 'react';
 
 interface OverlayProps {
     collapsed: boolean;
+    onCloseSidebar: () => void;
 }
 
-const Overlay: React.FC<OverlayProps> = ({ collapsed }) => {
+const Overlay: React.FC<OverlayProps> = ({ collapsed, onCloseSidebar }) => {
     return (
-        <div className={`overlay ${collapsed ? '' : 'active'}`}></div>
+        <div onClick={onCloseSidebar} className={`overlay ${collapsed ? '' : 'active'}`}></div>
     );
 };
 
