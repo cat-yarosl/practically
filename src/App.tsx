@@ -8,6 +8,7 @@ import Contact from './pages/contact';
 import Projects from './pages/projects';
 import Sidebar from './components/sidebar';
 import Overlay from './components/overlay';
+import Navbar from './components/navbar';
 import './App.css';
 
 const App = () => {
@@ -23,9 +24,7 @@ const App = () => {
 
     return (
       <div className="App">
-        <nav className="navbar">
-          <button className="menu-toggle" onClick={toggleSidebar}></button>
-        </nav>
+        <Navbar onNavClick={toggleSidebar}/>
         <Router>
           <div className="main-content">
             <Overlay collapsed={collapsed} onCloseSidebar={closeSidebar}/>

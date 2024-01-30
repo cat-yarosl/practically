@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Navbar: React.FC = () => {
+interface NavProps {
+  onNavClick: () => void;
+}
+
+const Navbar: React.FC<NavProps> = ({ onNavClick }) => {
   return (
     <nav className="navbar">
-      <button className="menu_toggle"></button>
+      <button onClick={onNavClick} className="menu-toggle"></button>
     </nav>
   );
 };
