@@ -21,8 +21,8 @@ const Contact: React.FC = () => {
                 </div>
                 <hr></hr>
                 <div className="contact-body">
-                    <p><strong>LinkedIn:</strong> linkedin.com/in/catherine-yaroslavtseva/</p>
-                    <p><strong>GitHub:</strong> github.com/catheriny09</p>
+                    <p><strong>LinkedIn:</strong> <a href='http://www.linkedin.com/in/catherine-yaroslavtseva/' target='blank'> linkedin.com/in/catherine-yaroslavtseva/</a></p>
+                    <p><strong>GitHub:</strong> <a href='http://www.github.com/catheriny09' target='blank'>github.com/catheriny09</a></p>
                     <p><strong>Portfolio:</strong> catherineyaroslavtseva.com</p>
                 </div>
             </div>
