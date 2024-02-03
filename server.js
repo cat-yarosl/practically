@@ -9,7 +9,8 @@ app.use(express.static('public'));
 
 // Send main page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/src/index.js'));
+    res.sendFile(path.join(__dirname, '/public/index.html'));
+    console.log('request')
 });
 
 app.listen(port, () => {
