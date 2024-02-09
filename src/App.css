@@ -149,7 +149,6 @@
   color: white;
   text-decoration: none;
   margin-left: 20px;
-  margin-top: 30px;
   font-size: 1rem;
 }
 
@@ -169,6 +168,25 @@
 
 .contact-card:hover {
   transform: scale(1.1);
+}
+
+.project-card {
+  width: 23vw;
+  height:40vh;
+  border: 1px solid #202024;
+  background-color: #2b2b30;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: 20px;
+  font-size: small;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.project-card hr {
+  width: 20vw;
+  border-color: white;
 }
 
 .image-card {
