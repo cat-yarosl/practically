@@ -19,6 +19,22 @@ const Projects: React.FC = () => {
                 <div className="contact-body">
                 </div>
             </div>
+            <div className="project-card">
+                <div className="contact-header">
+                    <h2> {'>'} PokeGit</h2>
+                </div>
+                <hr></hr>
+                <div className="contact-body">
+                </div>
+            </div>
+            <div className="project-card">
+                <div className="contact-header">
+                    <h2> {'>'} Cipher Safe</h2>
+                </div>
+                <hr></hr>
+                <div className="contact-body">
+                </div>
+            </div>
         </div>
     );
 }

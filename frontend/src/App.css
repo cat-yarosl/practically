@@ -43,6 +43,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   z-index: 3;
 }
 
@@ -187,6 +188,10 @@
 .project-card hr {
   width: 20vw;
   border-color: white;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
 }
 
 .image-card {
